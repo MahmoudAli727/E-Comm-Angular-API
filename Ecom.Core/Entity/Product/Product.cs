@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ecom.Core.Entity.Product
 {
@@ -15,7 +10,7 @@ namespace Ecom.Core.Entity.Product
         public int CategoryId { get; set; }
 
         [ForeignKey(nameof(CategoryId))]
-        public virtual Category Category { get; set; } = new Category();
+        public virtual Category? Category { get; set; } = new Category();
         public virtual List<Photo> Photos { get; set; }
     }
 }

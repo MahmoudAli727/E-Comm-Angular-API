@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Ecom.Core.Entity.Product
 {
@@ -11,6 +12,8 @@ namespace Ecom.Core.Entity.Product
 
         [ForeignKey(nameof(CategoryId))]
         public virtual Category? Category { get; set; } = new Category();
+
+        [JsonIgnore]
         public virtual List<Photo> Photos { get; set; }
     }
 }

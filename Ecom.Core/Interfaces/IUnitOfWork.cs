@@ -3,8 +3,8 @@ namespace Ecom.Core.Interfaces
 {
     public interface IUnitOfWork
     {
-        public ICategoryRepository Categories { get; }
-        public IProductRepository Products { get; }
-        public IPhotoRepository Photos { get; }
+        public ICategoryRepository CategoriesRepository { get; }
+        public IProductRepository ProductsRepository { get; }
+        public IPhotoRepository PhotosRepository { get; }
     }
 }

@@ -8,16 +8,16 @@ namespace Ecom.infrastructure.Repositries
     {
         private readonly AppDbContext _context;
 
-        public ICategoryRepository Categories {get;}
-        public IProductRepository Products {get;}
-        public IPhotoRepository Photos {get;}
-        
+        public ICategoryRepository CategoriesRepository { get;}
+        public IProductRepository ProductsRepository { get;}
+        public IPhotoRepository PhotosRepository { get;}
+
         public UnitOfWork(AppDbContext context)
         {
             _context = context;
-            Categories = new CategoryRepository(_context);
-            Products = new ProductRepository(_context);
-            Photos = new PhotoRepository(_context);
+            CategoriesRepository = new CategoryRepository(_context);
+            ProductsRepository = new ProductRepository(_context);
+            PhotosRepository = new PhotoRepository(_context);
         }
     }
 }

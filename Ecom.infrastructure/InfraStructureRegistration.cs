@@ -1,4 +1,5 @@
 ﻿using Ecom.Core.Interfaces;
+using Ecom.Core.Services;
 using Ecom.infrastructure.Data;
 using Ecom.infrastructure.Repositries;
 using Microsoft.EntityFrameworkCore;
